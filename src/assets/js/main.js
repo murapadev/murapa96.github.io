@@ -24,6 +24,7 @@ window.addEventListener("load", () => {
     document.documentElement.classList.add("dark");
     localStorage.setItem("dark_mode", true);
     window.darkMode = true;
+    showNight();
   }
 });
 
