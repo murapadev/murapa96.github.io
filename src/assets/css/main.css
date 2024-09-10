@@ -24,6 +24,12 @@
   transform: translate3d(0, 10px, 0);
 }
 
+circle{
+  width: 100px; /* Define ancho */
+  height: 100px; /* Define alto, debe ser igual al ancho para un círculo perfecto */
+  border-radius: 50%; /* Esto crea el círculo */
+}
+
 html.dark #darkToggle:hover .horizon {
   border-color: #718096 !important;
 }
