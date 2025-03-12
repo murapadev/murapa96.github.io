@@ -1,20 +1,45 @@
 [
 	{
-		"name": "VsCodex",
-		"description": "Integración de la inteligencia artificial GPT-3 (Modelo Codex) de OpenAI en Visual Studio Code.",
-		"image": "/assets/images/projects/email.ml.png",
-		"url": "https://www.github.com/murapa96/vscodex"
+	  "name": "YoutubeNLP",
+	  "description":
+		"A Streamlit app for analyzing YouTube video comments using NLP techniques.",
+	  "image": "/assets/images/projects/youtubenlp.png",
+	  "url": "https://github.com/Murapa96/YoutubeNLP"
 	},
 	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
+	  "name": "populpy",
+	  "description":
+		"Fetches related searches for a given query from Google Trends, including peak dates and popularity scores.",
+	  "image": "/assets/images/projects/populpy.png",
+	  "url": "https://github.com/Murapa96/populpy"
 	},
 	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
+	  "name": "ZTodo",
+	  "description":
+		"A SQLite-based task manager plugin for Oh-My-Zsh with priority levels, categories, deadlines, and efficient search.",
+	  "image": "/assets/images/projects/ztodo.png",
+	  "url": "https://github.com/Murapa96/ZTodo"
+	},
+	{
+	  "name": "VsCodex",
+	  "description":
+		"A VSCode extension that brings features similar to the OpenAI Playground.",
+	  "image": "/assets/images/projects/vscodex.png",
+	  "url": "https://github.com/Murapa96/VsCodex"
+	},
+	{
+	  "name": "AutoFire",
+	  "description":
+		"A script that enables autofire for a key. Enable it, press the key, and leave the computer away!",
+	  "image": "/assets/images/projects/autofire.png",
+	  "url": "https://github.com/Murapa96/AutoFire"
+	},
+	{
+	  "name": "Simple-Stupid-Todo",
+	  "description":
+		"A simple, command-line todo application written in Bash, storing tasks in a JSON file.",
+	  "image": "/assets/images/projects/simplestupidtodo.png",
+	  "url": "https://github.com/Murapa96/Simple-Stupid-Todo"
 	}
 ]
+  

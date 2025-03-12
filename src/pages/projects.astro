@@ -5,29 +5,29 @@ import Project from "../components/project.astro";
 import Layout from "../layouts/main.astro";
 ---
 
-<Layout title="Mis Proyectos">
-  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+<Layout title="Projects">
+  <section class="relative z-20 max-w-3xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
-      title="Mis Proyectos"
-      description="Aquí tienes algunos de los proyectos actuales en los que he estado trabajando. Realmente disfruto creando nuevos proyectos y desarrollando nuevas ideas. Siempre estoy trabajando en algo nuevo, ¡así que vuelve a menudo!"
+      title="Projects"
+      description="Here are some of the open-source projects I've built or contributed to."
     />
-    
 
-    <div
-      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
-    >
-      {
-        projects.map((project) => {
-          return (
-            <Project
-              name={project.name}
-              description={project.description}
-              image={project.image}
-              url={project.url}
-            />
-          )
-        })
-      }
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8">
+      {projects.map((project) => (
+        <a
+          href={project.url}
+          target="_blank"
+          class="block p-4 bg-neutral-900 rounded-lg shadow-md transition-transform hover:scale-105"
+        >
+          <img
+            src={project.image}
+            alt={project.name}
+            class="w-full h-40 object-cover rounded-md"
+          />
+          <h3 class="mt-4 text-lg font-semibold text-white">{project.name}</h3>
+          <p class="text-sm text-gray-400 mt-2">{project.description}</p>
+        </a>
+      ))}
     </div>
   </section>
 </Layout>

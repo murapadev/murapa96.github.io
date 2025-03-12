@@ -3,7 +3,7 @@ import menus from "../collections/menu.json";
 import Logo from "../components/logo.astro";
 ---
 
-<!-- This is an invisible div with relative position so that it takes up the height of the menu (because menu is absolute/fixed) -->
+<!-- This invisible div maintains the header's height when it's fixed/absolute positioned -->
 <div class="relative w-full h-20 opacity-0 pointer-events-none"></div>
 <header id="header" class="absolute top-0 z-50 w-full h-20">
   <div
@@ -60,16 +60,14 @@ import Logo from "../components/logo.astro";
           </div>
         </div>
         {
-          menus.map((menu) => {
-            return (
-              <a
-                href={menu.url}
-                class="relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 dark:hover:text-white"
-              >
-                {menu.name}
-              </a>
-            )
-          })
+          menus.map((menu) => (
+            <a
+              href={menu.url}
+              class="relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 dark:hover:text-white"
+            >
+              {menu.name}
+            </a>
+          ))
         }
       </div>
       <div
@@ -107,8 +105,8 @@ import Logo from "../components/logo.astro";
           >
         </div>
         <span class="hidden sm:inline-block">
-          <span id="dayText" class="ml-2">Tema claro</span>
-          <span id="nightText" class="hidden ml-2">Tema oscuro</span>
+          <span id="dayText" class="ml-2">Light theme</span>
+          <span id="nightText" class="hidden ml-2">Dark theme</span>
         </span>
       </div>
     </nav>

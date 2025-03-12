@@ -1,50 +1,46 @@
 ---
 layout: ../../layouts/post.astro  
-title: "El Impacto del Ataque a Polyfill.io: Lecciones y Consecuencias"
-description: Un análisis del reciente ataque de Polyfill, sus implicaciones para la comunidad de desarrollo y cómo protegerse.  
-dateFormatted: 26 de junio de 2024  
+title: "The Impact of the Polyfill.io Attack: Lessons and Consequences"
+description: An analysis of the recent Polyfill attack, its implications for the development community, and how to protect yourself.  
+dateFormatted: June 26, 2024  
 ---
 
-El 25 de junio de 2024, más de 100,000 sitios web fueron impactados por un ataque en la cadena de suministro de Polyfill.io después de que una compañía china adquiriera el dominio y modificara el script para redirigir a los usuarios hacia sitios maliciosos y estafas.
+On June 25, 2024, more than 100,000 websites were impacted by a supply chain attack on Polyfill.io after a Chinese company acquired the domain and modified the script to redirect users to malicious sites and scams.
 
-## ¿Qué es Polyfill?
+## What is a Polyfill?
 
-Un **Polyfill** es código, usualmente JavaScript, que proporciona funcionalidades modernas a navegadores antiguos que no soportan ciertas características nativas del estándar JavaScript. Es crucial para los desarrolladores mantener la compatibilidad en una amplia gama de navegadores.
+A **Polyfill** is code, usually JavaScript, that provides modern functionality to older browsers that don't support certain native features of the JavaScript standard. It's crucial for developers to maintain compatibility across a wide range of browsers.
 
-### ¿Qué es Polyfill.io?
+### What is Polyfill.io?
 
-Polyfill.io es un servicio que automatiza el proceso de servir polyfills solo cuando son necesarios. Los desarrolladores usan Polyfill.io para enviar automáticamente la versión correcta de JavaScript y otras polyfills a navegadores dependiendo de sus capacidades específicas y la falta de soporte para características más modernas. Esto simplifica el desarrollo y mantiene la eficiencia al asegurarse de que solo se cargan polyfills cuando es necesario.
+Polyfill.io is a service that automates the process of serving polyfills only when necessary. Developers use Polyfill.io to automatically deliver the correct version of JavaScript and other polyfills to browsers depending on their specific capabilities and lack of support for more modern features. This simplifies development and maintains efficiency by ensuring that polyfills are only loaded when needed.
 
-## Detalles del Ataque
+## Attack Details
 
-Este ataque se centró en la inyección de código malicioso en el servicio Polyfill.io, utilizado por cientos de miles de sitios para ofrecer compatibilidad de navegador. El dominio fue comprado por la empresa Funnull, que modificó el script para inyectar malware, afectando a cualquier sitio que incrustara cdn.polyfill.io en su código.
+This attack focused on injecting malicious code into the Polyfill.io service, used by hundreds of thousands of sites to provide browser compatibility. The domain was purchased by the Funnull company, which modified the script to inject malware, affecting any site that embedded cdn.polyfill.io in its code.
 
-## Consecuencias Inmediatas
+## Immediate Consequences
 
-El impacto inmediato fue significativo, con numerosos informes de problemas de rendimiento y seguridad en sitios afectados. Los desarrolladores se enfrentan al desafío de revisar y asegurar sus códigos y dependencias.
+The immediate impact was significant, with numerous reports of performance and security issues on affected sites. Developers now face the challenge of reviewing and securing their code and dependencies.
 
-## Lecciones Aprendidas y Cómo Protegerse
+## Lessons Learned and How to Protect Yourself
 
-En respuesta al ataque, los desarrolladores y equipos de seguridad deben considerar:
+In response to the attack, developers and security teams should consider:
 
-1. **Auditoría de Dependencias**: Revisa y actualiza las dependencias para asegurarte de que no estén comprometidas.
-2. **Implementación de Políticas de Seguridad**: Utiliza políticas de seguridad de contenido (CSP) y asegura la integridad de los recursos (SRI) para proteger tus aplicaciones.
-3. **Evitar el uso de CDNs**: Considera alojar tus propios scripts o utilizar alternativas confiables para reducir la exposición a riesgos de terceros. Ya que los dominios pueden ser adquiridos y modificados, es importante tener un control más directo sobre tus recursos.
-3. **Monitorización Continua**: Implementa sistemas de alerta temprana para detectar y responder rápidamente a actividades sospechosas.
-4. **Educación Continua**: Mantente informado sobre las mejores prácticas de seguridad y actualizaciones de la comunidad.
+1. **Dependency Auditing**: Review and update dependencies to ensure they haven't been compromised.
+2. **Security Policy Implementation**: Use Content Security Policies (CSP) and Subresource Integrity (SRI) to protect your applications.
+3. **Avoiding CDNs**: Consider hosting your own scripts or using trusted alternatives to reduce exposure to third-party risks. Since domains can be acquired and modified, it's important to have more direct control over your resources.
+4. **Continuous Monitoring**: Implement early warning systems to detect and respond quickly to suspicious activities.
+5. **Ongoing Education**: Stay informed about security best practices and community updates.
 
+## Sources
 
-## Fuentes
-
-- [Sansec alerta sobre el ataque a Polyfill.io](https://sansec.io/research/polyfill-supply-chain-attack)
-- [Consejos de Qualys para proteger tus dependencias](https://blog.qualys.com/vulnerabilities-threat-research/2024/06/25/polyfill-io-supply-chain-attack)
-- [Análisis de la cadena de suministro de software por FOSSA](https://fossa.com/blog/polyfill-supply-chain-attack-details-fixes/)
-
+- [Sansec alert on the Polyfill.io attack](https://sansec.io/research/polyfill-supply-chain-attack)
+- [Qualys tips for protecting your dependencies](https://blog.qualys.com/vulnerabilities-threat-research/2024/06/25/polyfill-io-supply-chain-attack)
+- [Software supply chain analysis by FOSSA](https://fossa.com/blog/polyfill-supply-chain-attack-details-fixes/)
 
 ---
 
-Este incidente es un recordatorio crítico de la importancia de la seguridad en el desarrollo web. Mantente informado y sigue buenas prácticas para proteger tus proyectos y a los usuarios que dependen de ellos. Mantente atento para más actualizaciones mientras la comunidad trabaja para mitigar el impacto de este ataque y prevenir futuros incidentes.
-
-Mantente al tanto de las últimas noticias y desarrollos en tecnología. No dudes en conectarte conmigo en [Twitter](https://x.com/murapabytes) para las últimas noticias y reflexiones.
+Stay up to date with the latest news and developments in technology. Feel free to connect with me on [Twitter](https://x.com/murapabytes) for the latest news and insights.
 
 ---

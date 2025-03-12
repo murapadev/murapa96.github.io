@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Inicio",
+		"name": "Home",
 		"url": "/"
 	},
 	{
@@ -8,11 +8,11 @@
 		"url": "/posts"
 	},
 	{
-		"name": "Proyectos",
+		"name": "Projects",
 		"url": "/projects"
 	},
 	{
-		"name": "Sobre mi",
+		"name": "About me",
 		"url": "/about"
 	}
 ]

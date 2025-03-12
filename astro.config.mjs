@@ -6,4 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
 	integrations: [tailwind()],
 	site: 'https://murapa96.github.io',
+	legacy: {
+		collections: true,
+	}
 });
