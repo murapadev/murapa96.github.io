@@ -4,12 +4,25 @@ const allPosts = await getCollection("post");
 
 const { count } = Astro.props;
 
-const postsLoop = allPosts.slice(0, count).map((post) => {
-	return {
-		...(post.data || {}),
-		link: `/post/${post.slug}`,
-	};
-});
+/**
+ * Parse the date string into a Date object for proper sorting
+ * @param {string} dateString - Date string in format like "August 16, 2024"
+ * @returns {Date} JavaScript Date object
+ */
+function parseDate(dateString) {
+  return new Date(dateString);
+}
+
+// Sort posts by date (newest first) then slice to get the required count
+const postsLoop = allPosts
+  .sort((a, b) => parseDate(b.data.dateFormatted).getTime() - parseDate(a.data.dateFormatted).getTime())
+  .slice(0, count)
+  .map((post) => {
+    return {
+      ...(post.data || {}),
+      link: `/post/${post.slug}`,
+    };
+  });
 ---
 
 {
@@ -72,8 +85,19 @@ const postsLoop = allPosts.slice(0, count).map((post) => {
           <p class="text-sm text-neutral-600 dark:text-neutral-400">
             <span>{post.description}</span>
           </p>
+          
+          {post.tags && post.tags.length > 0 && (
+            <div class="flex flex-wrap gap-2 mt-3">
+              {post.tags.map((tag) => (
+                <span class="px-2 py-1 text-xs font-medium rounded-full bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+          
           <div class="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
-            Posteado el {post.dateFormatted}
+            {post.dateFormatted}
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ layout: ../../layouts/post.astro
 title: "The Impact of the Polyfill.io Attack: Lessons and Consequences"
 description: An analysis of the recent Polyfill attack, its implications for the development community, and how to protect yourself.  
 dateFormatted: June 26, 2024  
+tags: ["Polyfill.io", "Supply Chain Attack", "Security", "JavaScript"]
 ---
 
 On June 25, 2024, more than 100,000 websites were impacted by a supply chain attack on Polyfill.io after a Chinese company acquired the domain and modified the script to redirect users to malicious sites and scams.

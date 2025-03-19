@@ -151,6 +151,13 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"day-1-hugging-face.md": {
+	id: "day-1-hugging-face.md";
+  slug: "day-1-hugging-face";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "polyfills-attack.md": {
 	id: "polyfills-attack.md";
   slug: "polyfills-attack";

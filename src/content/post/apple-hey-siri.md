@@ -3,6 +3,7 @@ layout: "../../layouts/post.astro"
 title: "Why Replace 'Hey Siri' with Just 'Siri' in iOS 18?"
 description: "An in-depth analysis of Apple's decision to simplify Siri's activation command in the upcoming iOS 18."  
 dateFormatted: "August 16, 2024"  
+tags: ["Apple", "iOS 18", "Siri", "Voice Assistant", "Technology"]
 ---
 
 Apple continues refining the user experience with the announcement of iOS 18, expected later this year. One of the most talked-about changes is the simplification of Siri's activation command. Starting with iOS 18, users will no longer need to say "**Hey Siri**" to activate the voice assistant; simply saying "**Siri**" will suffice. This change, while seemingly minor, marks a significant evolution in Apple's approach to natural language processing and voice-activated technology.

@@ -23,6 +23,18 @@ const { frontmatter } = Astro.props;
       >
         {frontmatter.title}
       </h1>
+      
+      {frontmatter.tags && frontmatter.tags.length > 0 && (
+        <div class="w-full max-w-2xl mx-auto mb-6 md:mb-8">
+          <div class="flex flex-wrap gap-2">
+            {frontmatter.tags.map((tag: string) => (
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
 
     <article
