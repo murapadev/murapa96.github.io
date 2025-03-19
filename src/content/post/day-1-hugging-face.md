@@ -6,10 +6,6 @@ dateFormatted: "March 19, 2025"
 tags: ["Hugging Face", "AI", "Introduction", "Tutorial"]
 ---
 
-Below is an in‐depth tutorial written in English that will guide you through getting started with Hugging Face in Python.
-
----
-
 # Getting Started with Hugging Face in Python
 
 This tutorial will introduce you to the Hugging Face ecosystem, focusing on the [Transformers](https://huggingface.co/transformers/) library. We’ll cover setting up your environment, installing the necessary libraries, and running your very first example using a pre-trained model.
