@@ -1,7 +1,3 @@
-Aquí tienes el README adaptado para el portfolio de MurapaBytes:
-
----
-
 # MurapaBytes Portfolio
 
 Bienvenido al **Portfolio de MurapaBytes** – un portafolio personal creado con el elegante y funcional template [Aria](https://github.com/static-templates/aria), adaptado para [Astro](https://astro.build). Este proyecto es el punto de partida perfecto para mostrar mi trabajo, habilidades y reflexiones sobre tecnología y desarrollo.
