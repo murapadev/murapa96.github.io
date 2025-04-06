@@ -5,15 +5,33 @@ import Layout from "../layouts/main.astro";
 const skills = [
   {
     name: "Frontend",
-    items: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Astro"],
+    items: [
+      { name: "React", proficiency: 90 },
+      { name: "TypeScript", proficiency: 85 },
+      { name: "Tailwind CSS", proficiency: 80 },
+      { name: "Next.js", proficiency: 85 },
+      { name: "Astro", proficiency: 75 },
+    ],
   },
   {
     name: "Backend",
-    items: ["Node.js", "Python", "Java", "PostgreSQL", "Express"],
+    items: [
+      { name: "Node.js", proficiency: 90 },
+      { name: "Python", proficiency: 80 },
+      { name: "Ruby", proficiency: 75 },
+      { name: "PostgreSQL", proficiency: 85 },
+      { name: "Express", proficiency: 90 },
+    ],
   },
   {
     name: "Tools",
-    items: ["Git", "Docker", "AWS", "Linux", "CI/CD"],
+    items: [
+      { name: "Git", proficiency: 95 },
+      { name: "Docker", proficiency: 80 },
+      { name: "AWS", proficiency: 75 },
+      { name: "Linux", proficiency: 85 },
+      { name: "CI/CD", proficiency: 80 },
+    ],
   },
 ];
 ---
@@ -22,11 +40,11 @@ const skills = [
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
       title="About Me"
-      description="Hi 👋 I'm a full-stack developer passionate about building new projects and exploring emerging technologies."
+      description="Hi 👋 I'm Pablo Ramos, a full-stack developer passionate about creating innovative solutions and exploring cutting-edge technologies."
     />
 
     <img
-      src="/assets/images/about.webp"
+      src="/assets/images/about.png"
       alt="Pablo Ramos programming, AI-generated image"
       class="relative z-30 w-full my-10 rounded-xl"
       loading="lazy"
@@ -36,13 +54,15 @@ const skills = [
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      I'm a self-taught developer who started coding in C at the age of 13. I
-      have a deep passion for software development and love learning new
-      technologies. Currently, I work as a full-stack developer at Nigal, a
-      company focused on modernizing industries with AI.
+      My development journey began at age 13 with C programming, sparking a
+      lifelong passion for software craftsmanship. This curiosity-driven
+      approach to mastering emerging technologies led me to my current role as a
+      full-stack developer at Nigal, where we leverage AI to revolutionize
+      traditional industries.
       <br /><br />
-      In my free time, I enjoy writing on my blog and contributing to open-source
-      projects.
+      When I'm not building professional projects, I actively contribute to open-source
+      initiatives and share technical insights through my blog. I believe in continuous
+      learning and meaningful engagement with the global developer community.
     </p>
 
     <!-- Skills & Technologies Section -->
@@ -56,9 +76,24 @@ const skills = [
             <h3 class="text-lg font-semibold mb-3 dark:text-neutral-200">
               {category.name}
             </h3>
-            <ul class="space-y-2">
+            <ul class="space-y-4">
               {category.items.map((skill) => (
-                <li class="text-gray-600 dark:text-neutral-400">{skill}</li>
+                <li>
+                  <div class="flex justify-between mb-1">
+                    <span class="text-gray-700 dark:text-neutral-300">
+                      {skill.name}
+                    </span>
+                    <span class="text-xs font-medium text-gray-600 dark:text-neutral-400">
+                      {skill.proficiency}%
+                    </span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                    <div
+                      class="bg-indigo-600 h-2 rounded-full transition-all duration-300 ease-in-out"
+                      style={`width: ${skill.proficiency}%`}
+                    />
+                  </div>
+                </li>
               ))}
             </ul>
           </div>
@@ -73,14 +108,14 @@ const skills = [
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      If you'd like to stay updated on my work, feel free to <a
+      Want to collaborate or discuss tech? <a
         href="https://twitter.com/murapadev"
         target="_blank"
-        class="text-indigo-600 underline">follow me on Twitter</a
-      >. You can also reach out via <a
+        class="text-indigo-600 underline">Connect with me on Twitter</a
+      > or drop me a message via <a
         href="mailto:murapabytes@gmail.com"
         class="text-indigo-600 underline">email</a
-      >, and I'll get back to you as soon as possible.
+      >. I'm always open to interesting conversations and opportunities.
     </p>
   </section>
 </Layout>
