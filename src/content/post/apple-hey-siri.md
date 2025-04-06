@@ -1,8 +1,8 @@
 ---
-layout: "../../layouts/post.astro"  
+layout: "../../layouts/post.astro"
 title: "Why Replace 'Hey Siri' with Just 'Siri' in iOS 18?"
-description: "An in-depth analysis of Apple's decision to simplify Siri's activation command in the upcoming iOS 18."  
-dateFormatted: "August 16, 2024"  
+description: "An in-depth analysis of Apple's decision to simplify Siri's activation command in the upcoming iOS 18."
+dateFormatted: "August 16, 2024"
 tags: ["Apple", "iOS 18", "Siri", "Voice Assistant", "Technology"]
 ---
 
@@ -28,4 +28,4 @@ For developers and tech enthusiasts, this update could open new avenues for inte
 
 ---
 
-Stay tuned for more updates on this and other developments in technology. As always, feel free to connect with me on [Twitter](https://x.com/murapabytes) for the latest news and insights.
+Stay tuned for more updates on this and other developments in technology. As always, feel free to connect with me on [Twitter](https://x.com/Murapadev) for the latest news and insights.

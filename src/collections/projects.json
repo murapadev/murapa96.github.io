@@ -1,45 +1,38 @@
 [
 	{
-	  "name": "YoutubeNLP",
-	  "description":
-		"A Streamlit app for analyzing YouTube video comments using NLP techniques.",
-	  "image": "/assets/images/projects/youtubenlp.png",
-	  "url": "https://github.com/Murapa96/YoutubeNLP"
+		"name": "YoutubeNLP",
+		"description": "A Streamlit app for analyzing YouTube video comments using NLP techniques.",
+		"image": "/assets/images/projects/youtubenlp.png",
+		"url": "https://github.com/murapadev/YoutubeNLP"
 	},
 	{
-	  "name": "populpy",
-	  "description":
-		"Fetches related searches for a given query from Google Trends, including peak dates and popularity scores.",
-	  "image": "/assets/images/projects/populpy.png",
-	  "url": "https://github.com/Murapa96/populpy"
+		"name": "populpy",
+		"description": "Fetches related searches for a given query from Google Trends, including peak dates and popularity scores.",
+		"image": "/assets/images/projects/populpy.png",
+		"url": "https://github.com/murapadev/populpy"
 	},
 	{
-	  "name": "ZTodo",
-	  "description":
-		"A SQLite-based task manager plugin for Oh-My-Zsh with priority levels, categories, deadlines, and efficient search.",
-	  "image": "/assets/images/projects/ztodo.png",
-	  "url": "https://github.com/Murapa96/ZTodo"
+		"name": "ZTodo",
+		"description": "A SQLite-based task manager plugin for Oh-My-Zsh with priority levels, categories, deadlines, and efficient search.",
+		"image": "/assets/images/projects/ztodo.png",
+		"url": "https://github.com/murapadev/ZTodo"
 	},
 	{
-	  "name": "VsCodex",
-	  "description":
-		"A VSCode extension that brings features similar to the OpenAI Playground.",
-	  "image": "/assets/images/projects/vscodex.png",
-	  "url": "https://github.com/Murapa96/VsCodex"
+		"name": "VsCodex",
+		"description": "A VSCode extension that brings features similar to the OpenAI Playground.",
+		"image": "/assets/images/projects/vscodex.png",
+		"url": "https://github.com/murapadev/VsCodex"
 	},
 	{
-	  "name": "AutoFire",
-	  "description":
-		"A script that enables autofire for a key. Enable it, press the key, and leave the computer away!",
-	  "image": "/assets/images/projects/autofire.png",
-	  "url": "https://github.com/Murapa96/AutoFire"
+		"name": "AutoFire",
+		"description": "A script that enables autofire for a key. Enable it, press the key, and leave the computer away!",
+		"image": "/assets/images/projects/autofire.png",
+		"url": "https://github.com/murapadev/AutoFire"
 	},
 	{
-	  "name": "Simple-Stupid-Todo",
-	  "description":
-		"A simple, command-line todo application written in Bash, storing tasks in a JSON file.",
-	  "image": "/assets/images/projects/simplestupidtodo.png",
-	  "url": "https://github.com/Murapa96/Simple-Stupid-Todo"
+		"name": "Simple-Stupid-Todo",
+		"description": "A simple, command-line todo application written in Bash, storing tasks in a JSON file.",
+		"image": "/assets/images/projects/simplestupidtodo.png",
+		"url": "https://github.com/murapadev/Simple-Stupid-Todo"
 	}
 ]
-  

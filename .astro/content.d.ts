@@ -151,6 +151,20 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"chatgpt-prompt-engineering.md": {
+	id: "chatgpt-prompt-engineering.md";
+  slug: "chatgpt-prompt-engineering";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"cursor-vs-windsurf.md": {
+	id: "cursor-vs-windsurf.md";
+  slug: "cursor-vs-windsurf";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "day-1-hugging-face.md": {
 	id: "day-1-hugging-face.md";
   slug: "day-1-hugging-face";

@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/post.astro  
+layout: ../../layouts/post.astro
 title: "The Impact of the Polyfill.io Attack: Lessons and Consequences"
-description: An analysis of the recent Polyfill attack, its implications for the development community, and how to protect yourself.  
-dateFormatted: June 26, 2024  
+description: An analysis of the recent Polyfill attack, its implications for the development community, and how to protect yourself.
+dateFormatted: June 26, 2024
 tags: ["Polyfill.io", "Supply Chain Attack", "Security", "JavaScript"]
 ---
 
@@ -42,6 +42,6 @@ In response to the attack, developers and security teams should consider:
 
 ---
 
-Stay up to date with the latest news and developments in technology. Feel free to connect with me on [Twitter](https://x.com/murapabytes) for the latest news and insights.
+Stay up to date with the latest news and developments in technology. Feel free to connect with me on [Twitter](https://x.com/Murapadev) for the latest news and insights.
 
 ---

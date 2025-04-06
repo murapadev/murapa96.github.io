@@ -4,9 +4,9 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind()],
-	site: 'https://murapa96.github.io',
-	legacy: {
-		collections: true,
-	}
+  integrations: [tailwind()],
+  site: "https://murapadev.github.io",
+  legacy: {
+    collections: true,
+  },
 });

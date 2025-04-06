@@ -1,8 +1,8 @@
-# MurapaBytes Portfolio
+# Murapadev Portfolio
 
-Bienvenido al **Portfolio de MurapaBytes** – un portafolio personal creado con el elegante y funcional template [Aria](https://github.com/static-templates/aria), adaptado para [Astro](https://astro.build). Este proyecto es el punto de partida perfecto para mostrar mi trabajo, habilidades y reflexiones sobre tecnología y desarrollo.
+Bienvenido al **Portfolio de Murapadev** – un portafolio personal creado con el elegante y funcional template [Aria](https://github.com/static-templates/aria), adaptado para [Astro](https://astro.build). Este proyecto es el punto de partida perfecto para mostrar mi trabajo, habilidades y reflexiones sobre tecnología y desarrollo.
 
-![MurapaBytes Portfolio Cover Photo](https://github.com/ccbikai/astro-aria/blob/main/public/assets/images/cover.png?raw=true)
+![Murapadev Portfolio Cover Photo](https://github.com/ccbikai/astro-aria/blob/main/public/assets/images/cover.png?raw=true)
 
 ## Características
 
@@ -13,7 +13,7 @@ Bienvenido al **Portfolio de MurapaBytes** – un portafolio personal creado con
 
 ## Primeros Pasos
 
-Para empezar con el portafolio de MurapaBytes, puedes instalar este template utilizando el CLI de Astro. Ejecuta el siguiente comando en tu terminal:
+Para empezar con el portafolio de Murapadev, puedes instalar este template utilizando el CLI de Astro. Ejecuta el siguiente comando en tu terminal:
 
 ```bash
 npm create astro@latest -- --template ccbikai/astro-aria
@@ -60,5 +60,4 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENS
 
 ---
 
-¡Gracias por visitar el portfolio de MurapaBytes! Espero que disfrutes explorando mi trabajo y mis proyectos.
-
+¡Gracias por visitar el portfolio de Murapadev! Espero que disfrutes explorando mi trabajo y mis proyectos.
