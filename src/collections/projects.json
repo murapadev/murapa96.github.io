@@ -6,7 +6,7 @@
 		"url": "https://github.com/murapadev/YoutubeNLP"
 	},
 	{
-		"name": "populpy",
+		"name": "Populpy",
 		"description": "Fetches related searches for a given query from Google Trends, including peak dates and popularity scores.",
 		"image": "/assets/images/projects/populpy.png",
 		"url": "https://github.com/murapadev/populpy"
